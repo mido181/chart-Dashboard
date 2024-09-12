@@ -1,0 +1,12 @@
+svg{
+    width:14px;
+    height:14px;   
+}
+
+.btn{
+background-color: white;
+
+&>*{
+    margin: 0px 2px;
+}
+}

@@ -1,0 +1,22 @@
+
+<section class="d-flex flex-lg-row flex-xl-row flex md-row flex-column mt-3 row-gap-3 justify-content-between align-items-center" >   
+    <div class="d-flex gap-2 align-items-center">
+        <span> عرض </span>
+        <p-dropdown [options]="options"
+        optionLabel="label" optionValue="value" [(ngModel)]="rows2" (ngModelChange)="first2 = 0" />
+        <span>{{totalRecords}} من اصل </span>
+    </div>
+
+    
+        <div class="d-flex justify-content-center border-0" style="width: max-content;"  >
+            <p-paginator 
+                dir=""
+                locale="en-US"
+                [showFirstLastIcon]="false" 
+                (onPageChange)="onPageChange($event)"
+                [first]="first"
+                [rows]="rows" 
+                [totalRecords]="totalRecords" 
+                />
+            </div>
+</section>

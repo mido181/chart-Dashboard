@@ -1,0 +1,26 @@
+:host ::ng-deep {
+    .p-button>*{
+        margin: 0px 3px;
+    }
+    .p-button{
+      border: 1px solid var(--bg-table-header);
+        margin: 0px 3px;
+        background-color: #FAFAFA;
+        color: black;
+        padding: 5px 10px;
+        border-radius: 6px;
+
+    }
+    .p-button-icon{
+        color: var(--bg-table-header) ;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    #main{
+        overflow: scroll;  
+    }
+}
+
+ 

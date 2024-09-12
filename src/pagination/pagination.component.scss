@@ -1,0 +1,44 @@
+//override for paignation button
+:host ::ng-deep {
+    .p-paginator-page {
+        margin: auto 3px;
+        font-size: .9rem;
+    }
+    .p-paginator, .p-component {
+    
+        flex-direction: row-reverse;
+    }
+    @media screen and (max-width: 300px) {        
+        .p-paginator-page {
+            margin: auto 0px ;
+        }
+    }
+
+
+    .p-paginator-page ,.p-paginator-next, .p-paginator-prev
+    {
+        transition: all .3s ease-in-out;
+        border-radius: 7px !important;
+        background-color: white;
+        color: var(--main);
+        &:focus {
+            color: white;
+            background-color: var(--main);
+        
+        }
+    } 	
+
+    .p-highlight{
+        background-color: var(--main);
+        color: white;
+    }
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+

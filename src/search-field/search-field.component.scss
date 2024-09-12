@@ -1,0 +1,40 @@
+:host ::ng-deep{
+    .p-inputtext{
+        border: none;
+
+    }&:focus{
+        box-shadow: none;
+       
+    }
+    .p-float-label label{
+        right: .70rem;
+    }
+
+     .p-button {
+        background-color: white;
+         border: 1px solid #e7e7e7;
+         color: var(--secondary-text-color); 
+    }
+
+    .p-button-label{
+    color: var(--main) ;
+}
+
+ 
+}
+
+.search-field:focus-within {
+    box-shadow: 0 0 0 0.1rem #dab0ff;
+}
+.search-field {
+    border: 1px solid #e7e7e7;
+}
+
+svg{
+    color: #e7e7e7;
+}
+
+.btn{
+    background-color: var(--main);
+    color: white;
+}
