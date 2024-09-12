@@ -1,5 +1,3 @@
-    <!-- [value]="products" (sortFunction)="customSort($event)" -->
-
     <section class="p-1 bg-white rounded-2 ">
             <p-table  #dt [customSort]="true"
             [value]="data"
@@ -24,7 +22,6 @@
                                <p-image
                                 styleClass="border-1"
                                 [src]="product.img" 
-                                (onImageError)="imageErr()"  
                                 width="40"
                                 > 
                                </p-image>

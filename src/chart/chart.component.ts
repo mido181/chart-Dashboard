@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as echarts from 'echarts';
 import { PrimeModule } from '../shared-module/prime-button/prime.module';
-import { log } from 'echarts/types/src/util/log.js';
-import { enterBlur } from 'echarts/types/src/util/states.js';
 
 type EChartsOption = echarts.EChartsOption;
 
@@ -21,21 +19,18 @@ export class ChartComponent implements OnInit {
   monthly = ['1', '2', '3', '4', '5', '7', '7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30']
 
   ngOnInit(): void {
-    
     this.EechartInit();
-
     }
       
 
-      EechartInit(){
-        const chartDom = document.getElementById('main')!;
-        this.myChart = echarts.init(chartDom);
-        this.myChart.setOption(this.eChertOption());  
-     
-      }
+    EechartInit(){
+      const chartDom = document.getElementById('main')!;
+      this.myChart = echarts.init(chartDom);
+      this.myChart.setOption(this.eChertOption());  
+    
+    }
 
     eChertOption(){
-
     return this.option = {
         height:'150px',
 
@@ -106,7 +101,7 @@ export class ChartComponent implements OnInit {
             }
           }
         ]
-      };
+    };
     }
 
   }

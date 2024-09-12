@@ -1,0 +1,42 @@
+<section  class="d-flex flex-column py-4 rounded-3 position-relative " style="background-color: var(--main);  " >
+
+    
+
+    <div class="d-flex flex-column gap-2 align-items-center justify-content-center">
+
+        <p class="text-white" >عرض التذكرة الخاصة بالفيلم</p>  
+    <p-iconField iconPosition="left">
+            <p-inputIcon (click)="Copied()"
+            [pTooltip]="copy"
+            pTooltipEvent="focus"
+            tooltipPosition="bottom" 
+            styleClass="pi pi-copy" />
+            <input type="text" 
+            pInputText 
+            [value]="inputVal"
+            (input)="reset()"
+            [placeholder]="inputVal" />
+    </p-iconField>
+    <p class="text-white" >فعال حتي 15 يوليو 2023</p>
+</div>
+<div class="position-absolute trash" >
+<button class="btn">
+    <i class="pi pi-trash text-white" 
+    pTooltip="حذف" 
+    tooltipPosition="bottom" 
+    ></i>    
+</button>
+</div>
+
+<div class="ball" style="height: 1px; border: 2px dashed rgb(221, 221, 221)"></div>
+<div class="px-4 py-2 d-flex justify-content-between align-items-end">
+<div class="d-flex align-items-end gap-2" > 
+    <span class="text-white " style="font-size: 1.1rem;"> خصم <br> 25% </span>
+    <p-button [outlined]="true" icon="pi pi-send" label=" مشاركة " iconPos="left" /> 
+</div>
+<div style="width: 80px; height: 80px; border-radius: 8px; overflow: hidden;">        
+    <qrcode [qrdata]="myAngularxQrCode" [width]="80"   [errorCorrectionLevel]="'M'"></qrcode>
+
+</div>
+</div>
+</section>

@@ -1,0 +1,50 @@
+*{
+    color:var(--text-color)
+    }
+    :host ::ng-deep { 
+    
+    .p-tooltip{
+    padding: 0px 20px;
+    width: 100px;
+        }
+    
+    .p-button>*{
+        margin: 0px 3px;
+        color:white;
+    }
+    
+    .p-button{
+        padding: 3px;
+        height: fit-content;
+        border-radius: 6px;
+        background-color: transparent;
+        font-size: 10px;
+        border:1px solid white !important;
+    
+    }  
+    }
+    
+    
+    .ball{
+    position: relative;
+    }
+    .ball::before, .ball::after {
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 30px;
+        background-color: rgba(248, 249, 250, 1);
+        border-radius: 50%;
+    }
+    .ball::after{
+        right: -15px;
+        top: -15px;
+    }
+    .ball::before{
+        left: -15px;
+        top: -15px;
+    }
+    
+    .trash{
+        left:30px;
+    }
